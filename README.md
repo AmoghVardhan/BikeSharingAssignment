@@ -4,6 +4,7 @@
 A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.
 
 ## Process
+We are choosing a multiple linear regression approach to solve this problem. Once the model is built, residual analysis is done to confirm that our assumptions are valid for this data.
 -	Load data from the csv file
 -	Pre-processing of data (check data types, null values, outliers, derived variables)
 -	EDA ( analyse the feature variables to better understand the data we are going to model)
