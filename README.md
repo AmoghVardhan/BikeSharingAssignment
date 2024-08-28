@@ -23,8 +23,11 @@ Final Result Comparison
 The model with r2 test > 0.8 is a good model fit.
 
 ## Inference
-For achieving maximum bookings, the features with higher coefficients needs to be given more importance
-- if temp increases, cnt increases
-- if it is season_4 (winter), cnt increases
-- if humidity, windspeed decreases, cnt increases (since coefficient is negative)
-- if weather is mist or light snow, the cnt decreases (since coefficient is negative)
+The model equation:
+
+cnt = 0.23*const + 0.54*temp - 0.18*hum - 0.18*windspeed + 0.10*season_2 + 0.14*season_4 + 0.23*yr_1 + 0.05*mnth_8 + 0.12*mnth_9 - 0.10*holiday_1 - 0.054*weathersit_2 - 0.24*weathersit_3
+
+Top 3 features are:
+- Temp => a unit increase in temperature, increases the bike demand by 0.54
+- Weathersit_3 (Light snow, light rain+ thunderstorm) => a unit increase in weathersit_3, decreases the bike demand by 0.24
+- Yr_1 (the year 2019) => if the year is 2019, the bike demand increases by 0.23
